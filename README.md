@@ -17,8 +17,15 @@ terraform init
 terraform apply
 
 
+### Step-4 : Verify the solution
+Wait for 2-5 mins to get the containers deployed.
+Access apache server few times to generate records in MySQL.
+Login to MySql : mysql -h host -u root -p pwd  (root pwd is mentioned in docker-compose below)
+use apachelogs;
+show tables;
+
 # Store apache2 logs in MySQL
 
-### [Github Url](https://github.com/ajitsingh25/embi-ebi)
+#### [Github Url](https://github.com/ajitsingh25/embi-ebi)
 
-### [docker-compose.yml](https://github.com/ajitsingh25/embi-ebi/blob/master/docker-compose.yml)
+#### [docker-compose.yml](https://github.com/ajitsingh25/embi-ebi/blob/master/docker-compose.yml)
