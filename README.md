@@ -7,7 +7,7 @@
 3. Login with your account using gcloud <gcloud auth login>
 
 ##Step-1
-sh gcp-setup.sh <gcp-project-id>
+sh gcp-setup.sh enter-gcp-project-id
 
 Above script will create the "mykey.json" and setup the "terraform.tfvars".
 
