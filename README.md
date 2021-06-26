@@ -7,11 +7,11 @@
 3. [Login with your account using gcloud](https://cloud.google.com/sdk/gcloud/reference/auth/login)
 
 
-### Step-1: 
-1. Create Service Account (SA).
-2. Assign viewer and Editor role to SA.
-3. Create SA Key
-4. Provide project id as an argments to gcp-setup.sh script
+### Step-1:  Execute script gcp-setup.sh. It will do following.
+   1. Create Service Account (SA).
+   2. Assign viewer and Editor role to SA.
+   3. Create SA Key
+   4. Provide project id as an argments to gcp-setup.sh script
 
 sh gcp-setup.sh enter-gcp-project-id
 
