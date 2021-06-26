@@ -1,19 +1,24 @@
 
-# Setup GCP environment including Service Account
+## Set GCP Env and execute Terraform
 
-## Prerequisites
+## Prerequisites:
 1. Create GCP Trail Account
 2. [Create GCP project.](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
 3. [Login with your account using gcloud](https://cloud.google.com/sdk/gcloud/reference/auth/login)
 
-### Step-1
-sh gcp-setup.sh enter-gcp-project-id
-#### Above script will create the "mykey.json" and setup the "terraform.tfvars".
 
-### Step-2
+### Step-1: 
+1. Create Service Account (SA).
+2. Assign viewer and Editor role to SA.
+3. Create SA Key
+4. Provide project id as an argments to gcp-setup.sh script
+
+sh gcp-setup.sh enter-gcp-project-id
+
+### Step-2:
 terraform init
 
-### Step-3
+### Step-3:
 terraform apply
 
 
@@ -24,7 +29,11 @@ terraform apply
    1. use apachelogs;
    2. show tables;
 
-# Store apache2 logs in MySQL
+
+### Step-5 :
+terraform destroy
+
+# Store apache2 logs in MySQL main project
 
 #### [Github Url](https://github.com/ajitsingh25/embi-ebi)
 
