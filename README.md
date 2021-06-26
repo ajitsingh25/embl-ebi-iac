@@ -25,7 +25,7 @@ terraform apply
 ### Step-4 : Verify the solution
 1. Wait for 2-5 mins to get the containers deployed.
 2. Access apache server few times to generate records in MySQL.
-3. Login to MySql : mysql -h host -u root -p pwd  (root pwd is mentioned in docker-compose below)
+3. Login to MySql : mysql -h host -u root -p pwd  (root pwd is mentioned in [docker-compose](https://github.com/ajitsingh25/embi-ebi/blob/master/docker-compose.yml)  below)
    1. use apachelogs;
    2. show tables;
 
